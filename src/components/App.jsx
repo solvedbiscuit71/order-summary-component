@@ -9,6 +9,7 @@ import Wrapper from '../styles/Wrapper';
 import Heading from '../styles/Heading';
 import Flex from '../styles/Flex';
 import Button from '../styles/Button';
+import Link from '../styles/Link';
 const theme = {
   colors: {
     veryPaleBlue: 'hsl(225, 100%, 98%)',
@@ -56,7 +57,7 @@ function App(props) {
                   <Heading size='.9rem' m={0} md={{size: '1rem'}}>Annual Plan</Heading>
                   <Text size='.9rem' m={0} my='4px 0'>$59.99/year</Text>
                 </Container>
-                <a style={{fontSize: '.8rem',justifySelf: 'flex-end',color: 'blue',fontWeight: 700}} href="#">Change</a>
+                <Link style={{justifySelf: 'flex-end'}} href='#'>Change</Link>
               </Grid>
 
               <Flex direction='column' gap='.75em' md={{gap: '1.125em'}}>
