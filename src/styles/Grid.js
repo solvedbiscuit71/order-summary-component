@@ -12,7 +12,7 @@ export default styled.div(props => ({
   gridTemplateAreas: props.areas,
 
   border: 'none',
-  borderRadius: props.radius || '1.5em',
+  borderRadius: '.75em',
   backgroundColor: props.bgColor || 'white',
 
   margin: props.m,

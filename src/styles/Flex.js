@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export default styled.div(props => ({
   display: 'flex',
-  flexDirection: props.direction,
+  flexDirection: props.dir || 'column',
   gap: props.gap || '1em',
   alignItems: props.align,
   justifyContent: props.justify,
