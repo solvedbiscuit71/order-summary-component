@@ -22,4 +22,20 @@ export default styled.div(props => ({
   paddingInline: props.px,
   marginBlock: props.my,
   paddingBlock: props.py,
+
+  width: props.w || '100%',
+  minHeight: props.minH,
+
+  '@media (min-width: 1024px)': props.md && {
+    margin: props.md.m,
+    padding: props.md.p,
+
+    marginInline: props.md.mx,
+    paddingInline: props.md.px,
+    marginBlock: props.md.my,
+    paddingBlock: props.md.py,
+
+    width: props.md.w,
+    minHeight: props.md.minH,
+  }
 }));

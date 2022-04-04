@@ -17,4 +17,12 @@ export default styled.h2(props => ({
   paddingInline: props.px,
   marginBlock: props.my,
   paddingBlock: props.py,
+
+  '@media (min-width: 1024px)': props.md && {
+    fontSize: props.md.size,
+    fontWeight: props.md.weight,
+
+    color: props.md.color,
+    textAlign: props.md.align
+  }
 }));

@@ -18,4 +18,8 @@ export default styled.div(props => ({
   paddingInline: props.px,
   marginBlock: props.my,
   paddingBlock: props.py,
+
+  '@media (min-width: 1024px)': props.md && {
+    gap: props.md.gap
+  }
 }));
